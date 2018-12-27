@@ -37,7 +37,7 @@ public class MyShiroRealm extends AuthorizingRealm {
         //保存所有权限名
         Set<String> allPermissions=new HashSet<>();
         //查询对应的角色
-        System.out.println(user.getId());
+
         EntityWrapper<SecUserRole> ew=new EntityWrapper<>();
         ew.eq("userid", user.getId());
         List<SecUserRole> secUserRoles = secUserRoleService.selectList(ew);
