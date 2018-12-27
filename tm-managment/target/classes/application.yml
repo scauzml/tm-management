@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spring_shiro?useUnicode=true&amp;characterEncoding=UTF-8
     username: root
-    password: mlroot
+    password: ml763829015
     # 初始化大小，最小，最大
     druid:
       initial-size: 1

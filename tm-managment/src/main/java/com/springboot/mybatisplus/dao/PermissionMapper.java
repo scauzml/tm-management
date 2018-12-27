@@ -1,4 +1,7 @@
 package com.springboot.mybatisplus.dao;
 
-public interface PermissionMapper {
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.springboot.mybatisplus.entity.Permission;
+
+public interface PermissionMapper extends BaseMapper<Permission> {
 }
