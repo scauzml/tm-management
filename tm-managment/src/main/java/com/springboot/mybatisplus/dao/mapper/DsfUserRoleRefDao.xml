@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.do1.dsf.modules.dsf.dao.DsfUserRoleRefDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="DsfUserRoleRefEntity" id="dsfUserRoleRefMap">
+        <result property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="roleId" column="role_id"/>
+        <result property="gmtCreated" column="gmt_created"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="gmtAuthor" column="gmt_author"/>
+    </resultMap>
+    
+    <delete id="deleteBatch">
+		delete from tb_dsf_user_role_ref where role_id in
+		<foreach item="roleId" collection="array" open="(" separator="," close=")">
+			#{roleId}
+		</foreach>
+	</delete>
+
+    <select id="queryRoleIdList" resultType="long">
+        select role_id from tb_dsf_user_role_ref where user_id = #{value}
+    </select>
+    
+    <select id="queryRolesByUserId" resultType="cn.com.do1.dsf.modules.dsf.entity.DsfRoleEntity">
+        select dr.id,dr.role_name from tb_dsf_user_role_ref ur
+        inner join tb_dsf_role dr on (ur.role_id = dr.id)
+        where ur.user_id = #{value}
+    </select>
+    
+    
+    
+    
+    <delete id="delAuthorize">
+        delete from tb_dsf_user_role_ref where role_id = #{rid}
+        <if test="username !=null and username.trim() != ''">
+           and gmt_author = #{username}
+        </if> 
+        and user_id in
+         <foreach collection="uids" item="uid"  open="(" close=")" separator=",">
+            #{uid}
+        </foreach> 
+    </delete>
+
+</mapper>

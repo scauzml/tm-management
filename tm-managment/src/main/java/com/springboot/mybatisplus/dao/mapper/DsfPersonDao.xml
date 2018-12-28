@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.do1.dsf.modules.dsf.dao.DsfPersonDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="DsfPersonEntity" id="dsfPersonMap">
+        <result property="personId" column="person_id"/>
+        <result property="personName" column="person_name"/>
+        <result property="gender" column="gender"/>
+        <result property="title" column="title"/>
+        <result property="telephone" column="telephone"/>
+        <result property="email" column="email"/>
+        <result property="avatar" column="avatar"/>
+        <result property="address" column="address"/>
+        <result property="remark" column="remark"/>
+        <result property="extattr" column="extattr"/>
+        <result property="gmtCreated" column="gmt_created"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="gmtAuthor" column="gmt_author"/>
+    </resultMap>
+
+
+</mapper>

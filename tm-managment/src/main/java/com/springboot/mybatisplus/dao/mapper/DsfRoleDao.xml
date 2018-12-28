@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.com.do1.dsf.modules.dsf.dao.DsfRoleDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="DsfRoleEntity" id="dsfRoleMap">
+        <result property="id" column="id"/>
+        <result property="roleName" column="role_name"/>
+        <result property="roleRemark" column="role_remark"/>
+        <result property="gmtCreated" column="gmt_created"/>
+        <result property="gmtModified" column="gmt_modified"/>
+        <result property="gmtAuthor" column="gmt_author"/>
+    </resultMap>
+    
+    <select id="queryRoleIdList"  resultType="long">
+		 select * from tb_dsf_role  where gmt_author = #{gmtAuthor}
+	 </select>
+	 
+	 <select id="queryAuthorizeUser" resultType="cn.com.do1.dsf.modules.dsf.form.RoleAuthorizeVo">
+        select ur.user_id,ur.role_id,dp.person_name,du.user_name,dp.title,dpt.name,du.mobile,du.status from tb_dsf_user_role_ref ur
+		left join tb_dsf_user du on (ur.user_id = du.user_id)
+		left join tb_dsf_user_person_ref up on (ur.user_id = up.user_id)
+		left join tb_dsf_person dp on (up.person_id = dp.person_id)
+		left join address_book_department dpt on (dpt.id = du.dept_id)
+        <where>
+            <if test="roleId != null and roleId.trim() != ''">
+                and ur.role_id = #{roleId} 
+            </if>
+            <if test="account != null and account.trim() != ''">
+                and (du.user_name like CONCAT('%',#{account, typeHandler=EscapeTypeHandler},'%') or dp.person_name like CONCAT('%',#{account, typeHandler=EscapeTypeHandler},'%'))
+            </if>
+            <if test="status != null and status.trim() != ''">
+                and du.status = #{status}
+            </if>
+        </where>
+        order by ur.gmt_created desc
+        <if test="offset != null and limit != null">
+            limit #{offset}, #{limit}
+        </if>
+    </select>
+    
+    <select id="queryAuthorizeUserTotal" resultType="int">
+        select count(1) from tb_dsf_user_role_ref ur 
+		left join tb_dsf_user du on (ur.user_id = du.user_id)
+		left join tb_dsf_user_person_ref up on (ur.user_id = up.user_id)
+		left join tb_dsf_person dp on (up.person_id = dp.person_id)
+        <where>
+            <if test="roleId != null and roleId.trim() != ''">
+                and ur.role_id = #{roleId} 
+            </if>
+            <if test="account != null and account.trim() != ''">
+                and du.user_name like CONCAT('%',#{account, typeHandler=EscapeTypeHandler},'%') or dp.person_name like CONCAT('%',#{account, typeHandler=EscapeTypeHandler},'%')
+            </if>
+            <if test="status != null and status.trim() != ''">
+                and du.status = #{status}
+            </if>
+        </where>
+    </select>
+    
+
+</mapper>
