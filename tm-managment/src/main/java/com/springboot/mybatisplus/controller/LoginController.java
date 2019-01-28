@@ -19,18 +19,20 @@ import javax.servlet.http.HttpSession;
  * @author zhangmingliang
  * @date 2018-12-27 10:17
  */
-@Controller
-@Api(tags = "构建项目测试，登录,注册,api")
 
+@Api(tags = "构建项目测试，登录,注册,api")
+@RestController
 public class LoginController {
     @GetMapping(value = "/login")
     @ApiOperation("进入登录页面")
-    @ResponseBody
+
     public String login() {
         return "logain";
     }
 
+
     @PostMapping(value = "/user")
+    @ApiOperation("测试用户")
     public String login(@RequestParam String username, @RequestParam String password, Model model){
 
         try {
@@ -56,14 +58,16 @@ public class LoginController {
         }
     }
 
-    @ResponseBody
+
     @GetMapping(value = "/index")
+    @ApiOperation(value="测试index")
     public String index(){
         return "welcome";
     }
 
 
     @RequestMapping("/logout")
+    @ApiOperation("登出")
     public String logOut(HttpSession session) {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
@@ -73,8 +77,10 @@ public class LoginController {
 
 
     //未授权mapping配置
-    @ResponseBody
+
     @GetMapping(value = "/403")
+    @ApiOperation("没有权限")
+
     public String error(){
         return "没有权限!";
     }
@@ -82,9 +88,11 @@ public class LoginController {
 
     //注解的使用
     //管理员角色
-    @ResponseBody
+
     @RequiresRoles("admin")
     @RequestMapping(value = "/role/admin")
+    @ApiOperation("测试角色admin")
+
     public String roleAdmin(){
         return "I am admin";
     }
@@ -93,22 +101,25 @@ public class LoginController {
     @ResponseBody
     @RequiresRoles("common")
     @RequestMapping(value = "/role/common")
+    @ApiOperation(value = "测试角色common")
     public String roleCommon(){
         return "I am common";
     }
 
     //拥有添加、删除权限
-    @ResponseBody
+
     @RequiresPermissions({"add","delete"})
     @RequestMapping(value = "/permissions")
+    @ApiOperation("测试角色权限add,delete")
     public String Permissions(){
         return "I have permissions add and delete";
     }
 
     //只拥有添加权限
-    @ResponseBody
+
     @RequiresPermissions("add")
     @RequestMapping(value = "/permission/add")
+    @ApiOperation("测试权限add")
     public String Permission(){
         return "I have permission add";
     }

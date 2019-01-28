@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.mybatisplus.system.mapper.TbStoreMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.springboot.mybatisplus.system.entity.TbStore">
+        <id column="id" property="id" />
+        <result column="batch_id" property="batchId" />
+        <result column="teacher_book_order_id" property="teacherBookOrderId" />
+        <result column="storenum" property="storenum" />
+        <result column="instore_num" property="instoreNum" />
+        <result column="needinstore_num" property="needinstoreNum" />
+        <result column="state_instore" property="stateInstore" />
+        <result column="state_outstore" property="stateOutstore" />
+        <result column="outedstore_num" property="outedstoreNum" />
+        <result column="needout_store_num" property="needoutStoreNum" />
+        <result column="create_people" property="createPeople" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_people" property="modifyPeople" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_del" property="isDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, batch_id, teacher_book_order_id, storenum, instore_num, needinstore_num, state_instore, state_outstore, outedstore_num, needout_store_num, create_people, create_time, modify_people, modify_time, is_del
+    </sql>
+
+</mapper>

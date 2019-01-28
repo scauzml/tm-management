@@ -2,29 +2,161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36d07893-989d-41ab-8428-11fe121fee20" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/LogType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/SysLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/KaptchaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/constant/LoginError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfCaptchaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfPersonDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfRoleDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserRoleRefDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserTokenDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfCaptchaEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfCaptchaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserLoginLockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfCaptchaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserLoginLockServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/HttpContextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/ShiroUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbAcademyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbBatchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookTotalOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbNoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPlanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRolePermissionRController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbStoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeachbookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookTotalOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTotalCordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbUserRoleRController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbAcademyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbBatchMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbClassBookOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbClassBookTotalOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbClassMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbNoticeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbPlanMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbRolePermissionRMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbStoreMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbTeachbookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbTeacherBookOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbTeacherBookTotalOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbTotalCordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbUserRoleRMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbAcademy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbBatch.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbClass.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbClassBookOrder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbClassBookTotalOrder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbNotice.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbPermission.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbPlan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbRole.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbRolePermissionR.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbStore.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbTeachbook.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbTeacherBookOrder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbTeacherBookTotalOrder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbTotalCord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbUser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/TbUserRoleR.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/BaseIdEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbAcademy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbBatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbClassBookOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbClassBookTotalOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbNotice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbPlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbRolePermissionR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbTeachbook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbTeacherBookOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbTeacherBookTotalOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbTotalCord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/TbUserRoleR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbAcademyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbBatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassBookOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassBookTotalOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbNoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbPlanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbRolePermissionRService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbStoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeachbookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeacherBookOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeacherBookTotalOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTotalCordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbUserRoleRService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbAcademyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbBatchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassBookOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassBookTotalOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbNoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbPermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbPlanServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbRolePermissionRServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbStoreServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeachbookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeacherBookOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeacherBookTotalOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTotalCordServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbUserRoleRServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/TokenGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/dd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/adapter/OAuthAuthorizeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/LogType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/SysLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfCaptchaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/MapUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfPersonDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfRoleDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserRoleRefDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserTokenDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfPersonDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfRoleDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserRoleRefDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserTokenDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfCaptchaEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfConfigEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfPersonEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfRoleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfUserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfUserRoleRefEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfUserTokenEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/SysLoginForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/UserTokenEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/redis/DsfTokenRedis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/redis/RedisKeys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/redis/RedisUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfCaptchaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfPersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfRoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserLoginLockService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserRoleRefService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserTokenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfCaptchaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfPersonServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfRoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserLoginLockServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserRoleRefServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserTokenServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/ShiroUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/springboot/mybatisplus/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/springboot/mybatisplus/controller/LoginController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,44 +180,52 @@
     <expand />
     <select />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="886136024">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="49" />
+          <entry key="java" value="239" />
           <entry key="txt" value="10" />
-          <entry key="xml" value="2" />
-          <entry key="yml" value="11" />
+          <entry key="xml" value="4" />
+          <entry key="yml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="49" />
+          <entry key="JAVA" value="239" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="XML" value="2" />
-          <entry key="YAML" value="11" />
+          <entry key="XML" value="4" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="30" />
-          <entry key="xml" value="12" />
-          <entry key="yml" value="1" />
+          <entry key="class" value="3" />
+          <entry key="java" value="240" />
+          <entry key="xml" value="19" />
+          <entry key="yml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="30" />
-          <entry key="XML" value="12" />
-          <entry key="YAML" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="240" />
+          <entry key="XML" value="19" />
+          <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -93,10 +233,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPlanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="45" column="60" lean-forward="true" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+            <state relative-caret-position="-225">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPermissionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbNoticeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-387">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-541">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,60 +275,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/KaptchaConfig.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfPersonDao.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfRoleDao.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserDao.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserRoleRefDao.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserTokenDao.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/ShiroUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookTotalOrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-497">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/HttpContextUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-79">
+              <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/constant/LoginError.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRolePermissionRController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-503">
+              <caret line="25" column="65" lean-forward="true" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbStoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeachbookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookOrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-481">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -171,6 +338,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DsfPersonEntity</find>
+      <find>RedisAutoConfiguration</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -178,56 +351,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/troy/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/troy/domain/Permission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/troy/domain/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/troy/repository/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/troy/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/query/PageCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/ApplicationMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/vo/MistraVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/Permission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/SecPermission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/ExceptionConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ILoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/ILoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/SecUserRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/SecRolePermission.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/SecUserRoleService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/SecUserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/SecUserRoleServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/MyShiroRealm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/SecRolePermissionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/PermissionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/SecUserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/SecRolePermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/RoleMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/PermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/ShiroConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfCaptchaEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfCaptchaService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/AddressBookPersonRefDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfCaptchaDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfCaptchaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserLoginLockService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserLoginLockServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/SysLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/LogType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/constant/LoginError.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/HttpContextUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/ShiroUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/KaptchaConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/TbUserRoleRMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbAcademyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbBatchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassBookOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassBookTotalOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbNoticeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbPermissionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbPlanService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbRolePermissionRService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbRoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbStoreService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeachbookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeacherBookOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeacherBookTotalOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTotalCordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbUserRoleRService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbBatchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassBookOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassBookTotalOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbNoticeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbPermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbPlanServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbRolePermissionRServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbRoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbStoreServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeachbookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeacherBookOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeacherBookTotalOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTotalCordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbUserRoleRServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbAcademyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbBatchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookTotalOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbNoticeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPermissionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPlanController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRoleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRolePermissionRController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbStoreController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeachbookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookTotalOrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbUserRoleRController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTotalCordController.java" />
       </list>
     </option>
   </component>
@@ -238,6 +412,12 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -254,6 +434,16 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="tm-managment" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tm-managment" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="tm-managment" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -261,9 +451,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="373" />
-    <option name="y" value="54" />
-    <option name="width" value="1501" />
+    <option name="x" value="553" />
+    <option name="y" value="38" />
+    <option name="width" value="1224" />
     <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -274,148 +464,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
             <path>
               <item name="tm-managment" type="58d84e3e:PackageViewProjectNode" />
               <item name="tm-managment" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="annonation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -477,6 +532,132 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="emun" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatisplus" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tm-managment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tm-managment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,13 +665,14 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="RedisAutoConfiguration&#9;FILE&#9;jar://C:/Users/zml/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.2.RELEASE/spring-boot-autoconfigure-2.0.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.java&#10;RedisProperties&#9;FILE&#9;jar://C:/Users/zml/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.2.RELEASE/spring-boot-autoconfigure-2.0.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546008274325" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548672563689" />
+    <property name="last_opened_file_path" value="D:/ShiroJwt-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -501,174 +683,12 @@
       <recent name="com.springboot.mybatisplus.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tmmanagementlastbest\tm-managment\src\main\java\com\springboot\mybatisplus\controller" />
+      <recent name="D:\tmmanagementlastbest\tm-managment\src\main\java\com\springboot\mybatisplus\service\impl" />
+      <recent name="D:\tmmanagementlastbest\tm-managment\src\main\java\com\springboot\mybatisplus\service" />
+      <recent name="D:\tmmanagementlastbest\tm-managment\src\main\java\com\springboot\mybatisplus\dao" />
       <recent name="D:\tmmanagementlastbest\tm-managment\src\main\java\com\springboot\mybatisplus\dao\mapper" />
-      <recent name="D:\IJ\tm-managment\src\main\java\com\springboot\mybatisplus\dao\mapper" />
-      <recent name="D:\IJ\tm-managment\src\main\resources" />
-      <recent name="D:\IJ\tm-managment\src\main\java" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/compiler.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/pom.xml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/adapter/OAuthAuthorizeAdapter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/dd.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/BaseController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/BaseRestController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/IndexController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfPersonDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfRoleDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserRoleRefDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserTokenDao.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/emun/RestStatus.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfConfigEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfPersonEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfRoleEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfUserEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfUserRoleRefEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfUserTokenEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/SysLoginForm.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/UserTokenEntity.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/exception/RestException.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/redis/DsfTokenRedis.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/redis/RedisKeys.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/redis/RedisUtil.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfPersonService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfRoleService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserRoleRefService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserTokenService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfPersonServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfRoleServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserRoleRefServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserTokenServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/FastJsonUtils.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/PageUtils.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/SqlUtil.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/StringUtils.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/query/Query.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/query/SQLFilter.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/Assert.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/ValidatorConstant.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/ValidatorUtils.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/AddGroup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/AliyunGroup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/FastDFSGroup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/Group.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/QcloudGroup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/QiniuGroup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/validator/group/UpdateGroup.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/vo/RoleAuthorizeVo.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -707,6 +727,10 @@
       <workItem from="1545874449323" duration="7739000" />
       <workItem from="1545894915276" duration="11429000" />
       <workItem from="1545919148709" duration="4303000" />
+      <workItem from="1546236381048" duration="2710000" />
+      <workItem from="1546239313604" duration="117000" />
+      <workItem from="1546239518304" duration="6627000" />
+      <workItem from="1548654614675" duration="15090000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1545919341879</created>
@@ -722,11 +746,32 @@
       <option name="project" value="LOCAL" />
       <updated>1545919652489</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第一次提交">
+      <created>1546008219103</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1546008219103</updated>
+    </task>
+    <task id="LOCAL-00004" summary="提交">
+      <created>1546008293942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546008293942</updated>
+    </task>
+    <task id="LOCAL-00005" summary="提交">
+      <created>1546008324142</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546008324142</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38835000" />
+    <option name="totallyTimeSpent" value="63633000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -739,8 +784,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24413647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -748,27 +794,27 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.17155266" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.38720173" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32908458" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.47448426" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32356134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="6" visible="true" weight="0.20304017" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49946696" visible="true" weight="0.14642082" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32569557" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.20715836" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.21715526" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.061822128" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" weight="0.15245202" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.11673774" />
       <window_info anchor="right" id="Database" order="6" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -779,12 +825,39 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次提交" />
+    <MESSAGE value="提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -803,313 +876,467 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/mybatis/mybatis/3.4.5/mybatis-3.4.5-sources.jar!/org/apache/ibatis/session/SqlSession.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/PermissionMapper.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus/2.1.4/mybatis-plus-2.1.4-sources.jar!/com/baomidou/mybatisplus/activerecord/Model.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ILoginService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassBookTotalOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/ILoginServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbClassService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus/2.1.4/mybatis-plus-2.1.4-sources.jar!/com/baomidou/mybatisplus/toolkit/GlobalConfigUtils.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.0.6.RELEASE/spring-aop-5.0.6.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java" />
-    <entry file="jar://$USER_HOME$/.m2/repository/com/baomidou/mybatis-plus/2.1.4/mybatis-plus-2.1.4-sources.jar!/com/baomidou/mybatisplus/mapper/EntityWrapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/SecUserRoleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbNoticeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbPermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbPlanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbRolePermissionRService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbStoreService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeachbookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeacherBookOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTeacherBookTotalOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbTotalCordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbUserRoleRService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/SecUserRoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="88">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/SecUserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-tx/5.0.6.RELEASE/spring-tx-5.0.6.RELEASE.jar!/org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/SecRolePermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/PermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/SecUserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/SecRolePermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/PermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/ShiroConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/ExceptionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="19" column="87" selection-start-line="19" selection-start-column="87" selection-end-line="19" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/ApplicationMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/SecUserRoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbAcademyServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/MyShiroRealm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbBatchServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassBookOrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="110" column="44" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="44" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfUserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassBookTotalOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbClassServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbNoticeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbPermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbPlanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbRolePermissionRServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbRoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbStoreServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeachbookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeacherBookOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTeacherBookTotalOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbTotalCordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbUserRoleRServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/TbUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/ITbAcademyService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/entity/DsfCaptchaEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfCaptchaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/AddressBookPersonRefDao.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/DsfCaptchaDao.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0-sources.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="70">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbAcademyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/DateUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbBatchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2652" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="216" column="21" selection-start-line="216" selection-start-column="21" selection-end-line="216" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfCaptchaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-66">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/DsfUserLoginLockService.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/service/impl/DsfUserLoginLockServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-541">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbUserRoleRController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTotalCordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-541">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookTotalOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-415">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeacherBookOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-481">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbTeachbookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbStoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRolePermissionRController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503">
+          <caret line="25" column="65" lean-forward="true" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPlanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/LogType.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/annonation/SysLog.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/constant/LoginError.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/HttpContextUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbPermissionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="264">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbNoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-541">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/util/ShiroUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/TbClassBookTotalOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-497">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfPersonDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfRoleDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserRoleRefDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/dao/mapper/DsfUserTokenDao.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/controller/DsfLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="45" column="60" lean-forward="true" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/springboot/mybatisplus/config/KaptchaConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

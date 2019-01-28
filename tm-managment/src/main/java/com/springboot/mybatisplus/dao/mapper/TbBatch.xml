@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.mybatisplus.system.mapper.TbBatchMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.springboot.mybatisplus.system.entity.TbBatch">
+        <id column="id" property="id" />
+        <result column="batch_name" property="batchName" />
+        <result column="start_write_time" property="startWriteTime" />
+        <result column="end_write_time" property="endWriteTime" />
+        <result column="start_booking_time" property="startBookingTime" />
+        <result column="end_booking_time" property="endBookingTime" />
+        <result column="create_time" property="createTime" />
+        <result column="create_people" property="createPeople" />
+        <result column="modify_people" property="modifyPeople" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_del" property="isDel" />
+        <result column="discount" property="discount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, batch_name, start_write_time, end_write_time, start_booking_time, end_booking_time, create_time, create_people, modify_people, modify_time, is_del, discount
+    </sql>
+
+</mapper>
