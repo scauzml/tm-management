@@ -1,4 +1,4 @@
-package com.springboot.service.impl;
+package com.springboot.mybatisplus.service.impl;
 
 
 import com.baomidou.mybatisplus.service.IService;

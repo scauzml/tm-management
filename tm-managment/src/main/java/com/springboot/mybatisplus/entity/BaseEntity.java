@@ -24,22 +24,25 @@ public class BaseEntity<E extends Model> extends BaseIdEntity<E> implements Seri
     /**
      * 创建时间
      */
+    @ApiModelProperty(value="创建时间",example = "2019-01-03")
     @TableField("create_time")
     private Date createTime;
     /**
      * 创建人
      */
+    @ApiModelProperty(value="创建人",example = "张明亮")
     @TableField("create_people")
     private String createPeople;
     /**
      * 修改人
      */
+    @ApiModelProperty(value="修改人",example = "张明亮")
     @TableField("modify_people")
     private String modifyPeople;
     /**
      * 修改时间
      */
-
+    @ApiModelProperty(value="修改时间",example = "2019-01-03")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date modifyTime;
 

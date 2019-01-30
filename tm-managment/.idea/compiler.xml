@@ -12,7 +12,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="tm-managment" options="-parameters" />
+      <module name="tm-managment" options="" />
     </option>
   </component>
 </project>

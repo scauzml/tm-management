@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.mybatisplus.dao.TeacherBookOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.springboot.mybatisplus.entity.TbTeacherBookOrder">
+        <id column="id" property="id" />
+        <result column="teacher_book_total_order_id" property="teacherBookTotalOrderId" />
+        <result column="teachbook_id" property="teachbookId" />
+        <result column="course" property="course" />
+        <result column="state_check" property="stateCheck" />
+        <result column="state_booking" property="stateBooking" />
+        <result column="num" property="num" />
+        <result column="bathid" property="bathid" />
+        <result column="create_people" property="createPeople" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_people" property="modifyPeople" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="total_order_id" property="totalOrderId" />
+        <result column="state_plan_check" property="statePlanCheck" />
+        <result column="is_need" property="isNeed" />
+        <result column="is_del" property="isDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, teacher_book_total_order_id, teachbook_id, course, state_check, state_booking, num, bathid, create_people, create_time, modify_people, modify_time, total_order_id, state_plan_check, is_need, is_del
+    </sql>
+
+    <select id="selectTeachBookOrderlist" resultType="com.springboot.mybatisplus.vo.TeachbookOrderVo">
+      select
+       a.id id，
+       a.create_time createtime,
+       b.id teacherBookTotalOrderId,
+       c.id teachbookId,
+       c.book_name bookname,
+       d.name bookPeople,
+       c.actor actor,
+       c.price price,
+       c.pushingtime publisheddate,
+       c.phishing phishing,
+       a.course course,
+       a.stateCheck,
+       a.sateBooking,
+       a.num,
+       e.batchid,
+       e.batch_name batchname,
+       e.create_time batchtime,
+       a.state_plan_check statePlanCheck
+       a.is_need isNeed
+       from
+       tb_teacher_book_order a
+       join tb_teacher_book_total_order b on a.teacher_book_total_order_id =b.id
+       join tb_teachbook c on a.teachbook_id = c.id
+       join tb_user d on b.user_id= d.id
+       join tb_batch e on e.id = a.bathid
+       where a.is_del=0
+
+    </select>
+
+</mapper>
