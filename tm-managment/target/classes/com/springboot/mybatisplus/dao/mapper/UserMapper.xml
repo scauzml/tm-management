@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.springboot.mybatisplus.dao.UserMapper">
-    <resultMap id="BaseResultMap" type="com.springboot.mybatisplus.entity.User">
-        <id column="id" property="id"/>
-        <result column="name" property="name"/>
-        <result column="password" property="password"/>
 
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.springboot.mybatisplus.entity.TbUser">
+        <id column="id" property="id" />
+        <result column="academy_id" property="academyId" />
+        <result column="class_id" property="classId" />
+        <result column="user_studentid" property="userStudentid" />
+        <result column="user_workid" property="userWorkid" />
+        <result column="name" property="name" />
+        <result column="phone" property="phone" />
+        <result column="email" property="email" />
+        <result column="password" property="password" />
+        <result column="type_user" property="typeUser" />
+        <result column="work_belong" property="workBelong" />
+        <result column="create_people" property="createPeople" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_people" property="modifyPeople" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_del" property="isDel" />
     </resultMap>
-    <!--通用查询结果列-->
+
+    <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id,name,password
+        id, academy_id, class_id, user_studentid, user_workid, name, phone, email, password, type_user, work_belong, create_people, create_time, modify_people, modify_time, is_del
     </sql>
 
-    <select id="customSql" parameterType="com.springboot.mybatisplus.vo.UserVo" resultMap="BaseResultMap">
-     select
-     <include refid="Base_Column_List"/>
-     from mistra
-     <where>
-         <if test="name !=null and name !=''">
-             and name like concat('%',#{name},'%')
-         </if>
-         <if test="password != null and password != ''">
-             AND password = #{password}
-         </if>
-
-     </where>
+    <select id="getListStudent" resultType="com.springboot.mybatisplus.entity.TbUser">
+        select id, academy_id, class_id, user_studentid, user_workid, name, phone, email, password, type_user, work_belong from tb_user
+        where is_del=0 and type_user=0
     </select>
+
+    <select id="getListTeacher" resultType="com.springboot.mybatisplus.entity.TbUser">
+        select id, academy_id, class_id, user_studentid, user_workid, name, phone, email, password, type_user, work_belong from tb_user
+        where is_del=0 and type_user !=0
+    </select>
+
 </mapper>
